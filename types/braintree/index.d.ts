@@ -1194,7 +1194,11 @@ declare namespace braintree {
 
     export type AccountUpdaterNotificationKind = "account_updater_daily_report";
 
-    export type DisputeNotificationKind = "dispute_opened" | "dispute_lost" | "dispute_won";
+    export type DisputeNotificationKind = 
+        | "dispute_opened"
+        | "dispute_lost"
+        | "dispute_won"
+        | "dispute_expired";
 
     export type SubscriptionNotificationKind =
         | "subscription_canceled"
